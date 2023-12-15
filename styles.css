@@ -184,6 +184,58 @@ img {
   }
 }
 
+/* Article container */
+.article-section {
+  display: flex;
+  padding: 15px;
+}
+
+.article-image {
+  width: 30%;
+  margin-right: 15px;
+}
+
+.article-paragraph {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .article-section {
+    flex-direction: column;
+  }
+
+  .article-image {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
+/* Article2 container */
+.article2-section {
+  display: flex;
+  padding: 15px;
+}
+
+.article2-image {
+  width: 30%;
+  margin-left: 15px;
+}
+
+.article2-paragraph {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .article2-section {
+    flex-direction: column;
+  }
+
+  .article2-image {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}
+
 /* "Automagic" image grid using no media queries */
 .projects-grid {
   display: grid;
