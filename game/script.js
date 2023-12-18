@@ -28,7 +28,7 @@ let brickOffsetLeft = 30;
 let score = 0;
 let level = 1;
 
-// Scoreboard in browser cache
+// Scoreboard in browser local storage
 if (!localStorage.getItem('highScore')) {
   localStorage.setItem('highScore', 0);
 }
