@@ -187,12 +187,13 @@ img {
 /* Article container */
 .article-section {
   display: flex;
-  padding: 15px;
+  /* flex-direction: column; Change to column layout for smaller screens */
+  padding: 10rem 2rem;
 }
 
 .article-image {
   width: 30%;
-  margin-right: 15px;
+  margin: 2rem;
 }
 
 .article-paragraph {
@@ -206,23 +207,32 @@ img {
 
   .article-image {
     width: 100%;
-    margin: 0 0 15px 0;
+    margin: 0 0 1.6rem 0;
   }
 }
 
 /* Article2 container */
 .article2-section {
   display: flex;
-  padding: 15px;
+  /* flex-direction: column;  */ /* Change to column layout for smaller screens */
+  padding: 10rem 2rem;
 }
 
 .article2-image {
   width: 30%;
-  margin-left: 15px;
+  margin: 2rem;
 }
 
 .article2-paragraph {
   flex: 1;
+}
+
+@media (max-width: 480px) {
+  /* Adjust font size or other styles for extra small screens */
+  .article-paragraph,
+  .article2-paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -232,8 +242,15 @@ img {
 
   .article2-image {
     width: 100%;
-    margin: 0 0 15px 0;
+    margin: 0 0 1.6rem 0;
   }
+}
+
+/* Adjust margins for paragraphs in both sections */
+.article-paragraph,
+.article2-paragraph {
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
 }
 
 /* "Automagic" image grid using no media queries */
