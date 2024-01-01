@@ -9,7 +9,7 @@ let dx = 2;
 let dy = -2;
 
 let paddleHeight = 10;
-let paddleWidth = 75;
+let paddleWidth = 790;
 let paddleX = (canvas.width - paddleWidth) / 2;
 
 let rightPressed = false;
@@ -17,7 +17,7 @@ let leftPressed = false;
 
 // Brick variables
 let brickRowCount = 3;
-let brickColumnCount = 5;
+let brickColumnCount = 9;
 let brickWidth = 75;
 let brickHeight = 20;
 let brickPadding = 10;
@@ -73,7 +73,7 @@ function drawBall() {
 function drawPaddle() {
   ctx.beginPath();
   ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = 'lightgreen';
   ctx.fill();
   ctx.closePath();
 }
@@ -190,8 +190,8 @@ function resetGame() {
   score = 0;
   x = canvas.width / 2;
   y = canvas.height - 30;
-  dx = 2 + level; // Increase speed with each level
-  dy = -2 - level;
+  // dx = 2 + level; // Increase speed with each level
+  // dy = -2 - level;
   paddleX = (canvas.width - paddleWidth) / 2;
 
   // Reset bricks
